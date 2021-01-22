@@ -50,7 +50,7 @@ TEST(StarterTest, AddMatricesTest) {
   }
 }
 
-TEST(StarterTest, DISABLED_MultiplyMatricesTest) {
+TEST(StarterTest, MultiplyMatricesTest) {
   // Multiply
   int arr1[6] = {1, 2, 3, 4, 5, 6};
   std::unique_ptr<RowMatrix<int>> mat1_ptr{new RowMatrix<int>(2, 3)};
