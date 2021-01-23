@@ -21,7 +21,7 @@ LRUReplacer::LRUReplacer(size_t num_pages) { this->num_pages = num_pages; }
 LRUReplacer::~LRUReplacer() {
   this->lru_replacer.clear();
   this->num_pages = 0;
-};
+}
 
 bool LRUReplacer::Victim(frame_id_t *frame_id) {
   if (LRUReplacer::Size() == 0) {
